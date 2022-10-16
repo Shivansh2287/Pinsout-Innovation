@@ -15,11 +15,11 @@ import r4 from "../assets/r4.png";
 
 export default function RelateProd() {
   return (
-    <Stack px={16} py={10}>
+    <Stack px={16} py={10} spacing={7}>
       <Stack justifyContext="center" alignItems="center">
         <Heading>Related Products</Heading>
       </Stack>
-      <Stack direction="row" justifyContext="space-between">
+      <SimpleGrid spacing={10} columns={4}>
         <Box>
           <Image src={r1} alt="logo" />
           <Stack>
@@ -96,7 +96,7 @@ export default function RelateProd() {
             </Stack>
           </Stack>
         </Box>
-      </Stack>
+      </SimpleGrid>
     </Stack>
   );
 }

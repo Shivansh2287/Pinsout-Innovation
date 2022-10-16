@@ -18,7 +18,7 @@ import { BsHandThumbsUp } from "react-icons/bs";
 export default function Review() {
   return (
     <Stack marginTop="5%" direction="column" px={16} py={10}>
-      <Stack direction="row">
+      <Stack direction="row" spacing={6}>
         <Stack width="50px">
           <Image
             src={p1}
@@ -30,9 +30,11 @@ export default function Review() {
           />
         </Stack>
         <Stack direction="column">
-          <Stack direction="row">
-            <Text>Viola Lucas</Text>
-            <MdVerified />
+          <Stack direction="row" justifyContent="space-between">
+            <Stack direction="row">
+              <Text>Viola Lucas</Text>
+              <MdVerified />
+            </Stack>
             <Stack>
               <Button rightIcon={<BsHandThumbsUp />}>Was This helpful?</Button>
             </Stack>
@@ -53,7 +55,7 @@ export default function Review() {
         </Stack>
       </Stack>
       <Divider />
-      <Stack pt={5} direction="row">
+      <Stack pt={5} direction="row" spacing={6}>
         <Stack width="50px">
           <Image
             src={p2}
@@ -65,9 +67,14 @@ export default function Review() {
           />
         </Stack>
         <Stack direction="column">
-          <Stack direction="row">
-            <Text>Viola Lucas</Text>
-            <MdVerified />
+          <Stack direction="row" justifyContent="space-between">
+            <Stack direction="row">
+              <Text>Viola Lucas</Text>
+              <MdVerified />
+            </Stack>
+            <Stack>
+              <Button rightIcon={<BsHandThumbsUp />}>Was This helpful?</Button>
+            </Stack>
           </Stack>
           <Text>August 13, 2022</Text>
           <Stack direction="row">
@@ -85,7 +92,7 @@ export default function Review() {
         </Stack>
       </Stack>
       <Divider />
-      <Stack pt={5} direction="row">
+      <Stack pt={5} direction="row" spacing={6}>
         <Stack width="50px">
           <Image
             src={p3}
@@ -97,9 +104,14 @@ export default function Review() {
           />
         </Stack>
         <Stack direction="column">
-          <Stack direction="row">
-            <Text>Viola Lucas</Text>
-            <MdVerified />
+          <Stack direction="row" justifyContent="space-between">
+            <Stack direction="row">
+              <Text>Viola Lucas</Text>
+              <MdVerified />
+            </Stack>
+            <Stack>
+              <Button rightIcon={<BsHandThumbsUp />}>Was This helpful?</Button>
+            </Stack>
           </Stack>
           <Text>August 13, 2022</Text>
           <Stack direction="row">
