@@ -5,6 +5,7 @@ import {
   Text,
   Button,
   Divider,
+  Box
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
@@ -18,7 +19,7 @@ export default function RatingReview() {
   return (
     <Stack direction="row" >
       <Stack>
-        <Heading>4.8</Heading>
+        <Heading as='h2' size='3xl'>4.8</Heading>
         <Stack direction="row">
           <AiTwotoneStar />
           <AiTwotoneStar />
@@ -32,7 +33,9 @@ export default function RatingReview() {
         <Stack direction="row">
           <Text>5</Text>
           <AiOutlineStar />
-          <Progress value={80} />
+          <Box width='100%'>
+           <Progress value={80} bg='#E5E5E5'  colorScheme='orange'/>
+          </Box>
           <Text>80%</Text>
         </Stack>
         <Stack direction="row">
@@ -60,11 +63,9 @@ export default function RatingReview() {
           <Text>80%</Text>
         </Stack>
       </Stack>
-      <Stack>
+      <Stack justifyContent='flex-end'>
         <Button>Write A Review</Button>
       </Stack>
-    
-     
     </Stack>
   );
 }
