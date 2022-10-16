@@ -37,8 +37,8 @@ export default function Review() {
           <AiOutlineStar />
         </Stack>
         <Text>
-          It's really easy to use and it is exactly what I am looking for. A lot
-          of good looking templates & it's highly customizable. Live support is
+          Its really easy to use and it is exactly what I am looking for. A lot
+          of good looking templates & its highly customizable. Live support is
           helpful, solved my issue in no time.
         </Text>
       </Stack>
