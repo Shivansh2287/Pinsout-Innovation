@@ -1,4 +1,4 @@
-import { Box, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { AiFillStar, AiTwotoneStar, AiOutlineStar } from "react-icons/ai";
 import { FaShippingFast } from "react-icons/fa";
@@ -7,14 +7,14 @@ export default function RelatedProducts() {
   return (
     <Stack>
       <Stack direction="row" justifyContent="center" spacing={30}>
-        <Text size="5xl" color="black">
+        <Text fontSize="2xl" color="black">
           <u>Description</u>
         </Text>
-        <Text>Specifications</Text>
-        <Text>Review</Text>
+        <Text fontSize="2xl">Specifications</Text>
+        <Text fontSize="2xl">Review</Text>
       </Stack>
       <Stack direction="row" marginTop={10}>
-        <Stack width="40%" marginRight="30%">
+        <Stack width="40%" marginRight="30%" px={16} py={10}>
           <Text>About This Products</Text>
           <Text>
             Keep your home organized, yet elegant with storage cabinets by H&N
@@ -71,7 +71,7 @@ export default function RelatedProducts() {
           </Stack>
         </Stack>
       </Stack>
-      <Stack direction='row' spacing={60}>
+      <Stack direction="row" spacing={60}>
         <Stack height="30%" width="10%">
           <FaShippingFast />
           <Text>Shipping Faster</Text>
